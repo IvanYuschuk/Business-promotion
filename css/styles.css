@@ -121,6 +121,7 @@ button{
     display: flex;
     gap: 35px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .heroo-wrap {
@@ -176,6 +177,15 @@ button{
     width: 164px;
     height: 23px;
     background: #fff;
+}
+.hero-list-button-items:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle-icon {
+    fill: #02897A;
 }
 /* #endregiom section1 here */
 /* #region section2 product */
@@ -235,6 +245,30 @@ button{
     background: #02897a;
     display: block;
     margin: 0 auto;
+}
+.product-icon-div {
+    height: 54px;
+    width: 54px;
+    border-radius: 19px;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-list-items:nth-child(1) .product-icon-div {
+    background-color: #02897A;
+}
+.product-list-items:nth-child(2) .product-icon-div {
+    background-color: #4D8DFF;
+}
+.product-list-items:nth-child(3) .product-icon-div {
+    background-color: #740A76;
+}
+.product-list-items:nth-child(4) .product-icon-div {
+    background-color: #F03E3D;
+}
+.product-icon {
+    fill: #FFFFFF;
 }
 /* #endregiom section2 product */
 
@@ -337,7 +371,33 @@ button{
 }
 
 .customer-list-items {
+    display: flex;
+    gap: 30.06px;
+    align-items: center;
     margin-bottom: 25px;
+}
+.customer-list-items .customer-text {
+    max-width: 386px;
+} 
+.customer-icon-div {
+    width: 35px;
+    height: 35px;
+    border-radius: 13.85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customer-list-items:nth-child(1) .customer-icon-div {
+    background-color: #FF9900;
+}
+.customer-list-items:nth-child(2) .customer-icon-div {
+    background-color: #F03E3D;
+}
+.customer-list-items:nth-child(3) .customer-icon-div {
+    background-color: #4D8DFF;
+}
+.customer-icon {
+    fill: #ffffff;
 }
 /* #endregiom section4 customer */
 /* #region section5 collaborative */
@@ -728,6 +788,7 @@ button{
     letter-spacing: 0.01em;
     color: #737373;
     margin-bottom: 16px;
+    width: 275px;
 }
 
 .client-wrap {
@@ -753,6 +814,16 @@ button{
     line-height: 171%;
     letter-spacing: 0.01em;
     color: #252b42;
+}
+.star-list {
+    display: flex;
+    gap: 3.86px;
+    margin-bottom: 16px;
+}
+.star-list-items {}
+
+.icon-star {
+    fill: #F3CD03;
 }
 /* #endregiom section9 client */
 
@@ -801,15 +872,18 @@ button{
 
 .footer-wrap {
     display: flex;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .footer-links {
+    width: 178px;
     margin-right: 146px;
 }
 
 
 .footer-wrap-one {
+    width: 118px;
     margin-right: 129px;
 }
 
@@ -833,10 +907,56 @@ button{
 }
 
 .footer-wrap-two {
+    width: 131px;
+    margin-right: 83px;
+}
+.footer-wrap-three {
+    width: 325px;
+}
+.footer-wrap-three .footer-text{
+    max-width: 280px;
+}
+.footer-form {
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.form-label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
 }
 
-.footer-form {}
-
+.form-input {
+    display: block;
+    width: 325px;
+    height: 48px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #02897a;
+    padding-left: 42px;
+    margin-bottom: 25px;
+}
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #02897a;
+}
+.form-button {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    width: 131px;
+    height: 39px;
+    background-color: #02897A;
+}
 .footer-text-under {
     font-family: var(--font-family);
     font-weight: 400;
@@ -844,5 +964,27 @@ button{
     line-height: 187%;
     color: #22343d;
     text-align: center;
+}
+
+.footer-links-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 18px;
+
+}
+
+.social-div {
+    background-color: #EDFFFC;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-social {
+    stroke: #02897A;
+    fill: #EDFFFC;
 }
 /* #endregiom footer */
